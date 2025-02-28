@@ -740,11 +740,20 @@ footer {
     }
     
     .price-table {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     
     .price-table th, .price-table td {
+        font-size: 0.6rem;
         padding: 8px 5px;
+    }
+
+    .price-table th:first-child {
+        width: 25%; /* Фиксированная ширина для первого столбца */
+    }
+    
+    .price-table th:not(:first-child) {
+        width: 25%; /* Фиксированная ширина для остальных столбцов */
     }
     
     .section-title {
