@@ -1,0 +1,174 @@
+.map-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ff3e5f;
+    text-align: center;
+}.footer-content {
+    opacity: 1 !important; /* Принудительно сделать footer видимым */
+}
+
+.footer-content.fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+}/* Анимации для элементов при прокрутке */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Задержки для каскадной анимации */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Микроанимации интерфейса */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ff3e5f;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.pc-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pc-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.game-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    background-color: #24303d;
+}
+
+.hamburger {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 62, 95, 0.5);
+}
+
+.lang-btn {
+    transition: transform 0.2s ease;
+}
+
+.lang-btn:hover:not(.active) {
+    transform: scale(1.1);
+}
+
+/* Пульсирующая анимация для логотипа */
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 62, 95, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 62, 95, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 62, 95, 0.5);
+    }
+}
+
+.nav-logo {
+    animation: pulse 3s infinite;
+}
+
+/* Анимация подсветки заголовков секций */
+@keyframes highlight {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.section-title::after {
+    background: linear-gradient(90deg, #ff3e5f, #7B68EE, #00E1A0, #ff3e5f);
+    background-size: 300% 300%;
+    animation: highlight 8s ease infinite;
+}
+
+/* Простая подсветка для прайс-листа */
+.price-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.price-table tbody tr:hover {
+    background-color: #24303d;
+}

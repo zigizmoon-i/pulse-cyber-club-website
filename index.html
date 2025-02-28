@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PULSE - Игровой компьютерный клуб</title>
+    <!-- Подключение CSS файлов -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-key="brand">PULSE</a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link" data-key="about">О нас</a></li>
+                <li class="nav-item"><a href="#computers" class="nav-link" data-key="computers">Компьютеры</a></li>
+                <li class="nav-item"><a href="#games" class="nav-link" data-key="games">Игры</a></li>
+                <li class="nav-item"><a href="#prices" class="nav-link" data-key="prices">Цены</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-key="contact">Контакты</a></li>
+                <li class="nav-item lang-switcher">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="liquid-bg">
+            <div class="liquid-gradient"></div>
+            <div class="liquid-gradient"></div>
+            <div class="liquid-gradient"></div>
+            <div class="liquid-gradient"></div>
+            <div class="liquid-gradient"></div>
+        </div>
+        <h1 class="logo" data-key="logo">PULSE</h1>
+        <p class="tagline" data-key="tagline">Лучший игровой компьютерный клуб в городе</p>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="about-title">О нашем клубе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="fade-in delay-100" data-key="about-p1">PULSE - это современный игровой компьютерный клуб, оснащенный высокопроизводительными компьютерами и консолями последнего поколения.</p>
+                    <p class="fade-in delay-200" data-key="about-p2">У нас вы найдете комфортную атмосферу, высокоскоростное подключение к интернету и широкий выбор популярных игр. Мы предлагаем различные конфигурации компьютеров, от стандартных до VIP, а также зону PlayStation 5.</p>
+                    <p class="fade-in delay-300" data-key="about-p3">Наш клуб идеально подходит как для одиночной игры, так и для командных соревнований. Регулярно проводим турниры с призами для наших гостей.</p>
+                </div>
+                <div class="about-image slide-in-right delay-200">
+                    <img src="/api/placeholder/600/400" alt="Интерьер игрового клуба">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="computers" class="dark-section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="computers-title">Наши компьютеры</h2>
+            <div class="pc-types">
+                <div class="pc-card fade-in delay-100">
+                    <div class="pc-card-img">
+                        <img src="/api/placeholder/400/200" alt="Стандартный ПК">
+                    </div>
+                    <div class="pc-card-content">
+                        <h3 class="pc-card-title" data-key="standard-pc">Стандартные ПК</h3>
+                        <div class="pc-card-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="processor">Процессор:</span>
+                                <span>Intel Core i5-13400F</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="gpu">Видеокарта:</span>
+                                <span>NVIDIA RTX 3060Ti</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="ram">ОЗУ:</span>
+                                <span>16 GB DDR5</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="monitor">Монитор:</span>
+                                <span>27" AOC FHD 165Hz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pc-card fade-in delay-200">
+                    <div class="pc-card-img">
+                        <img src="/api/placeholder/400/200" alt="VIP ПК">
+                    </div>
+                    <div class="pc-card-content">
+                        <h3 class="pc-card-title" data-key="vip-pc">VIP ПК</h3>
+                        <div class="pc-card-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="processor">Процессор:</span>
+                                <span>Intel Core i5-13400F</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="gpu">Видеокарта:</span>
+                                <span>NVIDIA RTX 4080</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="ram">ОЗУ:</span>
+                                <span>32 GB DDR5</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="monitor">Монитор:</span>
+                                <span>27" MSI 2K 180Hz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pc-card fade-in delay-300">
+                    <div class="pc-card-img">
+                        <img src="/api/placeholder/400/200" alt="PlayStation 5">
+                    </div>
+                    <div class="pc-card-content">
+                        <h3 class="pc-card-title" data-key="ps5">PlayStation 5</h3>
+                        <div class="pc-card-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="console">Консоль:</span>
+                                <span>Sony PlayStation 5</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="controllers">Геймпады:</span>
+                                <span>DualSense (2 шт)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="tv">ТВ:</span>
+                                <span>4K HDR 55"</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-key="audio">Аудио:</span>
+                                <span>5.1 Surround Sound</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="games-title">Популярные игры</h2>
+            <div class="games-container">
+                <div class="game-card scale-in delay-100">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="Counter-Strike 2">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">Counter-Strike 2</h3>
+                        <p class="game-platform">PC</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-200">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="Dota 2">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">Dota 2</h3>
+                        <p class="game-platform">PC</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-300">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="Fortnite">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">Fortnite</h3>
+                        <p class="game-platform">PC / PS5</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-400">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="EA FC 25">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">EA FC 25</h3>
+                        <p class="game-platform">PC / PS5</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-100">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="Call of Duty: Modern Warfare III">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">Call of Duty: MW III</h3>
+                        <p class="game-platform">PC / PS5</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-200">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="League of Legends">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">League of Legends</h3>
+                        <p class="game-platform">PC</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-300">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="PUBG">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">PUBG</h3>
+                        <p class="game-platform">PC</p>
+                    </div>
+                </div>
+
+                <div class="game-card scale-in delay-400">
+                    <div class="game-img">
+                        <img src="/api/placeholder/300/150" alt="God of War Ragnarök">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">God of War Ragnarök</h3>
+                        <p class="game-platform">PS5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prices" class="dark-section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="prices-title">Прайс-лист</h2>
+            <div class="price-table-container fade-in delay-200">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;" data-key="time">Время</th>
+                            <th style="text-align: center;" data-key="standard-pc-prices">Стандартный ПК</th>
+                            <th style="text-align: center;" data-key="vip-pc-prices">VIP ПК</th>
+                            <th style="text-align: center;" data-key="ps5-prices">PlayStation 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-key="1hour">1 час</td>
+                            <td>45 THB</td>
+                            <td>90 THB</td>
+                            <td>100 THB</td>
+                        </tr>
+                        <tr>
+                            <td data-key="3hours">3 часа</td>
+                            <td>130 THB</td>
+                            <td>250 THB</td>
+                            <td>250 THB</td>
+                        </tr>
+                        <tr>
+                            <td data-key="5hours">5 часов</td>
+                            <td>200 THB</td>
+                            <td>400 THB</td>
+                            <td>400 THB</td>
+                        </tr>
+                        <tr>
+                            <td data-key="12hours">12 часов</td>
+                            <td>450 THB</td>
+                            <td>750 THB</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td data-key="night">Целая ночь</td>
+                            <td>300 THB</td>
+                            <td>500 THB</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="contact-title">Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item slide-in-left delay-100">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title" data-key="address">Адрес</h3>
+                    <p class="contact-text" data-key="address-text">5/65 AB, Wiset Rd, Rawai, Mueang Phuket District, Phuket 83100</p>
+                </div>
+                <div class="contact-item slide-in-left delay-200">
+                    <div class="contact-icon">📱</div>
+                    <h3 class="contact-title" data-key="phone">Телефон</h3>
+                    <p class="contact-text">+66 97 305 9388</p>
+                </div>
+                <div class="contact-item slide-in-left delay-300">
+                    <div class="contact-icon">⏰</div>
+                    <h3 class="contact-title" data-key="opening-hours">Режим работы</h3>
+                    <p class="contact-text" data-key="opening-hours-text">Ежедневно, круглосуточно</p>
+                </div>
+            </div>
+            <div class="map-container fade-in delay-300">
+                <h4 class="map-title">Google Maps</h4>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.7822910778486!2d98.33470924439735!3d7.812855686830289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8aade1481f304569%3A0xcf231b9957f82eeb!2sPULSE%20-%20Cyber%20Club%20-%20Rawai%2C%20Phuket!5e0!3m2!1sru!2sth!4v1740660811856!5m2!1sru!2sth" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright" data-key="copyright">© 2025 PULSE - Игровой компьютерный клуб. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript файлов -->
+    <script src="language-switcher.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script src="scroll-animations.js"></script>
+</body>
+</html>
